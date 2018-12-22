@@ -1,0 +1,287 @@
+  [1m[35m (2.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "trombinoscope-dv_development"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "trombinoscope-dv_test"[0m
+  [1m[35m (776.6ms)[0m  [1m[35mCREATE DATABASE "trombinoscope-dv_development" ENCODING = 'unicode'[0m
+  [1m[35m (485.3ms)[0m  [1m[35mCREATE DATABASE "trombinoscope-dv_test" ENCODING = 'unicode'[0m
+  [1m[35m (19.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (24.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3305562529343820060)[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-22 13:35:27.593462"], ["updated_at", "2018-12-22 13:35:27.593462"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3305562529343820060)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/dashboard" for 127.0.0.1 at 2018-12-22 16:14:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/dashboard"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:14:09 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 14219ms (Views: 13750.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:37:03 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 186ms (Views: 174.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:42:01 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3681ms (Views: 3675.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:43:33 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 3992ms (Views: 3983.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:44:33 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3072ms (Views: 3066.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:45:04 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3044ms (Views: 3040.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:50:59 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3021ms (Views: 3017.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:52:42 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (34.4ms)
+Completed 500 Internal Server Error in 54ms
+
+
+  
+ActionView::Template::Error (The asset "francois.jpeg" is not present in the asset pipeline.):
+    10:   <div class="trombi">
+    11:     <div class="trombi-block"></div>
+    12:       <div class="photo-container">
+    13:         <%= image_tag("francois.jpeg", class: "photo") %>
+    14:       </div>
+    15:       <div class="sentence-container">
+    16:         <p>"Je te cache pas qu'il y a encore un peu de travail"</p>
+  
+app/views/pages/home.html.erb:13:in `_app_views_pages_home_html_erb__2763977408275948796_70164392248020'
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:53:02 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 54ms
+
+
+  
+ActionView::Template::Error (The asset "françois.jpeg" is not present in the asset pipeline.):
+    10:   <div class="trombi">
+    11:     <div class="trombi-block"></div>
+    12:       <div class="photo-container">
+    13:         <%= image_tag("françois.jpeg", class: "photo") %>
+    14:       </div>
+    15:       <div class="sentence-container">
+    16:         <p>"Je te cache pas qu'il y a encore un peu de travail"</p>
+  
+app/views/pages/home.html.erb:13:in `_app_views_pages_home_html_erb__2763977408275948796_70164440043760'
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:53:24 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 24ms
+
+
+  
+ActionView::Template::Error (The asset "images/françois.jpeg" is not present in the asset pipeline.):
+    10:   <div class="trombi">
+    11:     <div class="trombi-block"></div>
+    12:       <div class="photo-container">
+    13:         <%= image_tag("images/françois.jpeg", class: "photo") %>
+    14:       </div>
+    15:       <div class="sentence-container">
+    16:         <p>"Je te cache pas qu'il y a encore un peu de travail"</p>
+  
+app/views/pages/home.html.erb:13:in `_app_views_pages_home_html_erb__2763977408275948796_70164392171500'
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:53:38 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 29ms
+
+
+  
+ActionView::Template::Error (The asset "françois.jpeg" is not present in the asset pipeline.):
+    10:   <div class="trombi">
+    11:     <div class="trombi-block"></div>
+    12:       <div class="photo-container">
+    13:         <%= image_tag("françois.jpeg", class: "photo") %>
+    14:       </div>
+    15:       <div class="sentence-container">
+    16:         <p>"Je te cache pas qu'il y a encore un peu de travail"</p>
+  
+app/views/pages/home.html.erb:13:in `_app_views_pages_home_html_erb__2763977408275948796_70164418442320'
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:54:33 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 83ms (Views: 79.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:55:09 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2255.5ms)
+Completed 200 OK in 2308ms (Views: 2293.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:55:34 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2858ms (Views: 2854.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:55:40 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 88ms (Views: 82.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:56:08 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 84ms (Views: 72.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:57:10 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 2676ms (Views: 2670.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:57:21 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 3526ms (Views: 3518.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:57:29 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 6419ms (Views: 6415.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:58:10 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 2745ms (Views: 2737.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:59:23 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 3095ms (Views: 3090.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 16:59:51 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 447ms
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "    border-radius": expected "}", was ": 200px;"
+        on line 49 of app/assets/stylesheets/pages/_home.scss
+        from line 2 of app/assets/stylesheets/pages/_index.scss
+        from line 15 of app/assets/stylesheets/application.scss
+>>     border-radius: 200px;
+
+   ----^
+):
+     6:     <title>TODO</title>
+     7:     <%= csrf_meta_tags %>
+     8:     <%= action_cable_meta_tag %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    10:     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    11:   </head>
+    12:   <body>
+  
+app/assets/stylesheets/pages/_home.scss:49
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1106765464712726281_70164417918500'
+Started GET "/" for 127.0.0.1 at 2018-12-22 17:00:05 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 2795ms (Views: 2790.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 17:00:32 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2415ms (Views: 2410.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-22 17:00:56 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2982ms (Views: 2977.3ms)
+
+
