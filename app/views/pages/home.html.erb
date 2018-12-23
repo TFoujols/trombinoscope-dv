@@ -1,7 +1,7 @@
 <!-- Header -->
 <div class="header">
-  <h2>DV Trombinoscope</h2>
-  <h1>Reconnaissez les tous !</h1>
+  <h2>DV Burger Quizz</h2>
+  <h1>And who am I?</h1>
 </div>
 
 
@@ -9,9 +9,10 @@
 <div class="trombi-container">
   <div class="trombi">
 
-    <div class="trombi-block">
+    <div class="trombi-block" id="trombi-block-1">
       <div class="photo-container">
-        <%= image_tag("francois.jpeg", id: "colleague-photo", class: "photo") %>
+        <%= image_tag("francois.jpeg", id: "colleague-photo", class: "photo", data: { lastname: "De La Taste"
+        } ) %>
         <p id="job"> Product Manager </p>
       </div>
       <div class="sentence-container">
@@ -21,18 +22,26 @@
       </div>
     </div>
 
-    <div class="trombi-block">
+    <div class="trombi-block" id="buttons">
       <div class="button">
+        <p class="answer"> A</p>
         <p class=name> Sophie-Laetitia</p>
         <p class=last-name> Roux </p>
       </div>
       <div class="button">
+        <p class="answer"> B</p>
         <p class=name> Morgane</p>
         <p class=last-name> Veaute </p>
       </div>
       <div class="button">
-        <p class=name> Marie</p>
-        <p class=last-name> Cointe </p>
+        <p class="answer"> C</p>
+        <p class=name> François</p>
+        <p class=last-name>De La Taste</p>
+      </div>
+      <div class="button">
+        <p class="answer"> D</p>
+        <p class=name> François</p>
+        <p class=last-name>De La Taste</p>
       </div>
     </div>
   </div>

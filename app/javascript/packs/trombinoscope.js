@@ -75,15 +75,59 @@ const team = [
     img:      "nathalie.jpeg",
     job:      "Contrôleuse de gestion",
     sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Rodolphe",
+    lastName: "Trancart",
+    img:      "rodolphe.jpeg",
+    job:      "Consultant",
+    sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Sacha",
+    lastName: "Beee",
+    img:      "sacha.jpeg",
+    job:      "Consultant",
+    sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Tanguy",
+    lastName: "Foujols",
+    img:      "tanguy.png",
+    job:      "Consultant",
+    sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Thibaut",
+    lastName: "Barondeau",
+    img:      "thibaut.jpeg",
+    job:      "Consultant",
+    sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Tristan",
+    lastName: "Puech",
+    img:      "tristan.jpeg",
+    job:      "Consultant",
+    sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Xudong",
+    lastName: "Chang",
+    img:      "xudong.jpeg",
+    job:      "Consultant",
+    sentence: "J'en peux pluus !"
   }
 ]
 
 
 // DOM items selection
 const buttons = document.querySelectorAll(".button");
-const photo = document.getElementById("colleague-photo");
+let photo = document.getElementById("colleague-photo");
 const sentence = document.getElementById("colleague-sentence");
 const job = document.getElementById("job");
+const trombi = document.querySelector(".trombi");
+const trombiBlock1 = document.getElementById("trombi-block-1");
 
 
 // Get an aleatory number
@@ -96,6 +140,12 @@ function getRandomIntArray(max) {
   number1 = getRandomInt(max);
   number2 = getRandomInt(max);
   number3 = getRandomInt(max);
+  while (number1 == number2) {
+    number2 = getRandomInt(max);
+  }
+  while ((number3 == number2) || (number3 == number1)) {
+    number3 = getRandomInt(max);
+  }
   return [number1,number2,number3];
 }
 
@@ -112,21 +162,19 @@ function shuffle(a) {
 }
 
 // Display colleague DOM informations
-function colleagueDisplay(id) {
-  // Colleague selection
-  colleague = team[id];
-  // Update colleague's informations
+function colleagueDisplay(colleague) {
   photo.src = `/assets/${colleague.img}`;
+  photo.setAttribute("data-lastname", colleague.lastName);
   sentence.innerText = colleague.sentence;
   job.innerText = colleague.job;
 }
 
 
 // Update the buttons
-function namesDisplay(id) {
+function namesDisplay(colleague) {
   // Colleagues selection
-  ids = getRandomIntArray(11);
-  colleagues = shuffle([ team[ids[0]], team[ids[1]], team[id] ]);
+  ids = getRandomIntArray(team.length);
+  colleagues = shuffle([ team[ids[0]], team[ids[1]], team[ids[2]], colleague ]);
   // Update buttons
   let i = 0;
   buttons.forEach(function (button) {
@@ -141,16 +189,58 @@ function namesDisplay(id) {
 buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
 
-    id = getRandomInt(11);
-    colleagueDisplay(id);
-    namesDisplay(id);
+    colleagueName = photo.dataset.lastname.toLowerCase();
+    nameClicked = this.querySelector(".last-name").innerText.toLowerCase();
 
+    if (colleagueName == nameClicked) {
+      id = getRandomInt(team.length);
+      colleague = team[id];
+      colleagueDisplay(colleague);
+      namesDisplay(colleague);
+      // New colleague animation
+      trombiBlock1.classList.add('fadein');
+      setTimeout(function () {
+          trombiBlock1.classList.remove('fadein');
+      }, 600)
+      // Button animation
+      this.classList.add('pulse');
+      setTimeout(function () {
+          button.classList.remove('pulse');
+      }, 600)
+      // Button animation
+      names = document.querySelectorAll(".name");
+      lastNames = document.querySelectorAll(".last-name");
+      names.forEach(function (name) {
+        name.classList.add('fadein');
+        setTimeout(function () {
+            name.classList.remove('fadein');
+        }, 600)
+      });
+      lastNames.forEach(function (lastName) {
+        lastName.classList.add('fadein');
+        setTimeout(function () {
+            lastName.classList.remove('fadein');
+        }, 600)
+      });
+      // lastName.classList.add('fadein');
+      // setTimeout(function () {
+      //     lastName.classList.remove('fadein');
+      // }, 600)
+    } else {
+      this.classList.add('shake');
+      setTimeout(function () {
+          button.classList.remove('shake');
+      }, 300)
+    }
   });
 });
 
 
 
-
+// id = getRandomInt(11);
+// colleague = team[id];
+// colleagueDisplay(colleague);
+// namesDisplay(colleague);
 
 
 // function toggleButton () {
