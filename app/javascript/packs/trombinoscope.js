@@ -117,6 +117,13 @@ const team = [
     img:      "xudong.jpeg",
     job:      "Consultant",
     sentence: "J'en peux pluus !"
+  },
+  {
+    name:     "Sophie-Laetitia",
+    lastName: "Roux",
+    img:      "sophie-laetitia.jpeg",
+    job:      "Consultante senior",
+    sentence: "J'en peux pluus !"
   }
 ]
 

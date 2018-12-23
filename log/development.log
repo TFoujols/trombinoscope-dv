@@ -2811,3 +2811,210 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 6150ms (Views: 6147.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:25:33 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3824.2ms)
+Completed 200 OK in 4391ms (Views: 3985.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:39:13 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 6484ms (Views: 6479.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:39:51 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4834ms (Views: 4830.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:49:08 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6126ms (Views: 6121.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:49:30 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 72ms (Views: 67.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:49:52 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 159ms (Views: 155.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:50:15 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 5402ms (Views: 5399.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:53:26 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6549ms (Views: 6545.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:53:56 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 57ms (Views: 53.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:54:11 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 3395ms (Views: 3390.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:56:22 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 52ms (Views: 49.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:56:42 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 68ms (Views: 64.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:56:49 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 57ms (Views: 53.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:56:50 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 36.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:57:06 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 56ms (Views: 53.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:57:52 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 4607ms (Views: 4603.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:58:00 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 68ms (Views: 65.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:58:15 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 3582ms (Views: 3578.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:58:55 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 3476ms (Views: 3472.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:59:11 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 92ms (Views: 87.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:59:54 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 94ms (Views: 89.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:00:07 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (39.4ms)
+Completed 200 OK in 3728ms (Views: 3725.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:02:36 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.2ms)
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:02:38 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:02:40 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 6624ms (Views: 6620.2ms)
+
+
+Completed 200 OK in 6023ms (Views: 6019.3ms)
+
+
+Completed 200 OK in 5059ms (Views: 5055.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:03:03 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 369ms (Views: 363.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:03:20 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 73ms (Views: 69.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:04:34 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 3865ms (Views: 3861.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-24 00:04:49 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 3959ms (Views: 3951.8ms)
+
+
