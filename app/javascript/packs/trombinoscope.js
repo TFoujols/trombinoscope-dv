@@ -8,7 +8,7 @@ const team = [
   },
   {
     name:     "François",
-    lastName: "De La Taste",
+    lastName: "de la Taste",
     img:      "francois.jpeg",
     job:      "Product Manager",
     sentence: "Je ne te cache pas que"
@@ -50,14 +50,14 @@ const team = [
   },
   {
     name:     "Arnaud",
-    lastName: "De Baynast",
+    lastName: "de Baynast",
     img:      "arnaud.jpeg",
     job:      "Directeur général",
     sentence: "Non mais là faut être plus sérieux"
   },
   {
     name:     "Arthur",
-    lastName: "XXXXX",
+    lastName: "Legrand",
     img:      "arthur.jpeg",
     job:      "Consultant",
     sentence: "Tellement STRRRAAAAT !"
@@ -85,7 +85,7 @@ const team = [
   },
   {
     name:     "Sacha",
-    lastName: "Beee",
+    lastName: "Bellaiche",
     img:      "sacha.jpeg",
     job:      "Consultant",
     sentence: "J'en peux pluus !"
@@ -113,7 +113,7 @@ const team = [
   },
   {
     name:     "Xudong",
-    lastName: "Chang",
+    lastName: "Zhang",
     img:      "xudong.jpeg",
     job:      "Consultant",
     sentence: "J'en peux pluus !"
