@@ -80,20 +80,21 @@ p {
 
 
 @keyframes shake {
+
   10%, 90% {
-    transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, -6px, 0);
   }
 
   20%, 80% {
-    transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, -6px, 0);
   }
 
   30%, 50%, 70% {
-    transform: translate3d(-8px, 0, 0);
+    transform: translate3d(-8px, -6px, 0);
   }
 
   40%, 60% {
-    transform: translate3d(8px, 0, 0);
+    transform: translate3d(8px, -6px, 0);
   }
 }
 
@@ -127,6 +128,8 @@ p {
     width: 250px;
     height: 250px;
     border: 4px solid $light-gray;
+    box-shadow: 2px 2px 10px $gray-0;
+
   }
   .button {
     position: relative;
@@ -141,10 +144,12 @@ p {
     border: 2px solid $green;
     background-image: linear-gradient(60deg, rgba(0,0,0,0), rgba(0,0,0,0));
     transition: all 0.3s ease;
+    box-shadow: 2px 2px 15px $gray-0;
+
     &:hover {
-      //margin-bottom: 4px;
+      transform: translateY(-6px);
       background-image: linear-gradient(60deg, $green-1, $green);
-      box-shadow: 2px 2px 15px $gray-0;
+      box-shadow: 2px 8px 15px $gray-1;
       p {
         color: white;
       }

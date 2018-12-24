@@ -127,7 +127,6 @@ const team = [
   }
 ]
 
-
 // DOM items selection
 const buttons = document.querySelectorAll(".button");
 let photo = document.getElementById("colleague-photo");
@@ -168,7 +167,7 @@ function shuffle(a) {
     return a;
 }
 
-// Display colleague DOM informations
+// Function to display the new colleague
 function colleagueDisplay(colleague) {
   photo.src = `/assets/${colleague.img}`;
   photo.setAttribute("data-lastname", colleague.lastName);
@@ -177,7 +176,7 @@ function colleagueDisplay(colleague) {
 }
 
 
-// Update the buttons
+// Function to display the new buttons
 function namesDisplay(colleague) {
   // Colleagues selection
   ids = getRandomIntArray(team.length);
@@ -192,7 +191,12 @@ function namesDisplay(colleague) {
 }
 
 
- // Dynamism when click ona button
+// function selectColleague() {
+//   team
+// }
+let teamPop = team;
+let round = 0;
+ // Dynamism when click on a button
 buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
 
@@ -200,39 +204,52 @@ buttons.forEach(function (button) {
     nameClicked = this.querySelector(".last-name").innerText.toLowerCase();
 
     if (colleagueName == nameClicked) {
-      id = getRandomInt(team.length);
-      colleague = team[id];
-      colleagueDisplay(colleague);
-      namesDisplay(colleague);
-      // New colleague animation
-      trombiBlock1.classList.add('fadein');
-      setTimeout(function () {
-          trombiBlock1.classList.remove('fadein');
-      }, 600)
-      // Button animation
-      this.classList.add('pulse');
-      setTimeout(function () {
-          button.classList.remove('pulse');
-      }, 600)
-      // Button animation
-      names = document.querySelectorAll(".name");
-      lastNames = document.querySelectorAll(".last-name");
-      names.forEach(function (name) {
-        name.classList.add('fadein');
+      if (round != team.length) {
+        // Colleague selection
+        id = getRandomInt(teamPop.length);
+        colleague = teamPop[id];
+        // Display the new colleague
+        colleagueDisplay(colleague);
+        // Display the new buttons
+        namesDisplay(colleague);
+        teamPop = teamPop.filter(function(e) { return e !== colleague });
+        round++
+        console.log(round);
+        ///////////////
+        // ANIMATION //
+        ///////////////
+
+        // New colleague animation
+        trombiBlock1.classList.add('fadein');
         setTimeout(function () {
-            name.classList.remove('fadein');
+            trombiBlock1.classList.remove('fadein');
         }, 600)
-      });
-      lastNames.forEach(function (lastName) {
-        lastName.classList.add('fadein');
+        // Button animation
+        this.classList.add('pulse');
         setTimeout(function () {
-            lastName.classList.remove('fadein');
+            button.classList.remove('pulse');
         }, 600)
-      });
-      // lastName.classList.add('fadein');
-      // setTimeout(function () {
-      //     lastName.classList.remove('fadein');
-      // }, 600)
+        // Button animation
+        names = document.querySelectorAll(".name");
+        lastNames = document.querySelectorAll(".last-name");
+
+        names.forEach(function (name) {
+          name.classList.add('fadein');
+          setTimeout(function () {
+              name.classList.remove('fadein');
+          }, 600)
+        });
+
+        lastNames.forEach(function (lastName) {
+          lastName.classList.add('fadein');
+          setTimeout(function () {
+              lastName.classList.remove('fadein');
+          }, 600)
+        });
+      } else
+      {
+
+      } // End of first ifelse
     } else {
       this.classList.add('shake');
       setTimeout(function () {
