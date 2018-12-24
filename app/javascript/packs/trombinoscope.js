@@ -135,6 +135,7 @@ const job = document.getElementById("job");
 const trombi = document.querySelector(".trombi");
 const trombiBlock1 = document.getElementById("trombi-block-1");
 const compteurNumber = document.getElementById("compteur-number");
+const scoreDiv = document.getElementById("score");
 
 
 // Get an aleatory number
@@ -197,6 +198,9 @@ function namesDisplay(colleague) {
   });
 }
 
+function scoreDisplay(score) {
+  scoreDiv.innerText = score;
+}
 
 function selectColleague(team) {
   id = getRandomInt(team.length, -1);
@@ -206,7 +210,8 @@ function selectColleague(team) {
 
 
 let teamPop = team;
-let round = 0;
+let round = 1;
+let score = 0;
  // Dynamism when click on a button
 buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
@@ -224,7 +229,9 @@ buttons.forEach(function (button) {
         namesDisplay(colleague);
         teamPop = teamPop.filter(function(e) { return e !== colleague });
         round++;
-        compteurNumber.innerText = round + 1;
+        score++;
+        scoreDisplay(score);
+        compteurNumber.innerText = round;
         //console.log(round);
         ///////////////
         // ANIMATION //
@@ -259,9 +266,13 @@ buttons.forEach(function (button) {
         });
       } else
       {
-
+        // Implementer la logique de fin de jeu
       } // End of first ifelse
     } else {
+      // Decrementing score
+      score--;
+      scoreDisplay(score);
+      // Shaking button
       this.classList.add('shake');
       setTimeout(function () {
           button.classList.remove('shake');
