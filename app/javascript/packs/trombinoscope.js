@@ -134,23 +134,30 @@ const sentence = document.getElementById("colleague-sentence");
 const job = document.getElementById("job");
 const trombi = document.querySelector(".trombi");
 const trombiBlock1 = document.getElementById("trombi-block-1");
+const compteurNumber = document.getElementById("compteur-number");
 
 
 // Get an aleatory number
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+function getRandomInt(max, idToAVoid) {
+  randomInt = Math.floor(Math.random() * Math.floor(max));
+  while (randomInt == idToAVoid) {
+    randomInt = Math.floor(Math.random() * Math.floor(max));
+  }
+  return randomInt;
 }
 
 // Get an array of three aleatory numbers
-function getRandomIntArray(max) {
-  number1 = getRandomInt(max);
-  number2 = getRandomInt(max);
-  number3 = getRandomInt(max);
+function getRandomIntArray(max, colleague) {
+  idToAvoid = team.indexOf(colleague);
+
+  number1 = getRandomInt(max, idToAvoid);
+  number2 = getRandomInt(max, idToAvoid);
+  number3 = getRandomInt(max, idToAvoid);
   while (number1 == number2) {
-    number2 = getRandomInt(max);
+    number2 = getRandomInt(max, idToAvoid);
   }
   while ((number3 == number2) || (number3 == number1)) {
-    number3 = getRandomInt(max);
+    number3 = getRandomInt(max, idToAvoid);
   }
   return [number1,number2,number3];
 }
@@ -179,7 +186,7 @@ function colleagueDisplay(colleague) {
 // Function to display the new buttons
 function namesDisplay(colleague) {
   // Colleagues selection
-  ids = getRandomIntArray(team.length);
+  ids = getRandomIntArray(team.length, colleague);
   colleagues = shuffle([ team[ids[0]], team[ids[1]], team[ids[2]], colleague ]);
   // Update buttons
   let i = 0;
@@ -191,9 +198,13 @@ function namesDisplay(colleague) {
 }
 
 
-// function selectColleague() {
-//   team
-// }
+function selectColleague(team) {
+  id = getRandomInt(team.length, -1);
+  colleague = team[id];
+  return colleague;
+}
+
+
 let teamPop = team;
 let round = 0;
  // Dynamism when click on a button
@@ -206,15 +217,15 @@ buttons.forEach(function (button) {
     if (colleagueName == nameClicked) {
       if (round != team.length) {
         // Colleague selection
-        id = getRandomInt(teamPop.length);
-        colleague = teamPop[id];
+        colleague = selectColleague(teamPop);
         // Display the new colleague
         colleagueDisplay(colleague);
         // Display the new buttons
         namesDisplay(colleague);
         teamPop = teamPop.filter(function(e) { return e !== colleague });
-        round++
-        console.log(round);
+        round++;
+        compteurNumber.innerText = round + 1;
+        //console.log(round);
         ///////////////
         // ANIMATION //
         ///////////////

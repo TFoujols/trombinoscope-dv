@@ -2,6 +2,10 @@
 <div class="header">
   <h2>DV Burger Quiz</h2>
   <h1>And who am I?</h1>
+  <div id="score-container">
+    <p id="score-title"> Score </p>
+    <p id="score"> 0 </p>
+  </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" preserveAspectRatio="none">
     <polygon fill="#F4F4F4" points="0,20 20,0 20,20"/>
   </svg>
@@ -16,6 +20,7 @@
         <%= image_tag("francois.jpeg", id: "colleague-photo", class: "photo", data: { lastname: "De La Taste"
         } ) %>
         <p id="job"> Product Manager </p>
+        <p id="compteur"> <span id="compteur-number">1</span> <span id="compteur-total"> / 21</span> </p>
       </div>
       <div class="sentence-container">
         <h3>La phrase</h3>
