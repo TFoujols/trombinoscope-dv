@@ -136,6 +136,8 @@ const trombi = document.querySelector(".trombi");
 const trombiBlock1 = document.getElementById("trombi-block-1");
 const compteurNumber = document.getElementById("compteur-number");
 const scoreDiv = document.getElementById("score");
+const endModal = document.getElementById("endModal");
+
 
 
 // Get an aleatory number
@@ -212,6 +214,16 @@ function selectColleague(team) {
 let teamPop = team;
 let round = 1;
 let score = 0;
+
+// Colleague selection
+colleague = selectColleague(teamPop);
+// Display the new colleague
+colleagueDisplay(colleague);
+// Display the new buttons
+namesDisplay(colleague);
+teamPop = teamPop.filter(function(e) { return e !== colleague });
+
+
  // Dynamism when click on a button
 buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
@@ -232,7 +244,7 @@ buttons.forEach(function (button) {
         score++;
         scoreDisplay(score);
         compteurNumber.innerText = round;
-        //console.log(round);
+
         ///////////////
         // ANIMATION //
         ///////////////
@@ -242,12 +254,14 @@ buttons.forEach(function (button) {
         setTimeout(function () {
             trombiBlock1.classList.remove('fadein');
         }, 600)
+
         // Button animation
         this.classList.add('pulse');
         setTimeout(function () {
             button.classList.remove('pulse');
         }, 600)
-        // Button animation
+
+        // Name and last name animations
         names = document.querySelectorAll(".name");
         lastNames = document.querySelectorAll(".last-name");
 
@@ -264,19 +278,36 @@ buttons.forEach(function (button) {
               lastName.classList.remove('fadein');
           }, 600)
         });
+
+        // Point animation
+        this.querySelector('.point').innerText = '+1'
+        this.querySelector('.point').classList.add('positive', 'display');
+        setTimeout(function () {
+            button.querySelector('.point').classList.remove('positive', 'display');
+        }, 800)
       } else
       {
-        // Implementer la logique de fin de jeu
+        // End of the game modal
+        this.setAttribute("data-toggle", "modal");
+        this.setAttribute("data-target", "#endModal");
       } // End of first ifelse
     } else {
       // Decrementing score
       score--;
       scoreDisplay(score);
+
       // Shaking button
       this.classList.add('shake');
       setTimeout(function () {
           button.classList.remove('shake');
       }, 300)
+
+      // Point animation
+      this.querySelector('.point').innerText = '-1'
+      this.querySelector('.point').classList.add('negative', 'display');
+      setTimeout(function () {
+          button.querySelector('.point').classList.remove('negative', 'display');
+      }, 800)
     }
   });
 });

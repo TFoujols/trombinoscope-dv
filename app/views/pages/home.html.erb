@@ -20,12 +20,12 @@
         <%= image_tag("francois.jpeg", id: "colleague-photo", class: "photo", data: { lastname: "De La Taste"
         } ) %>
         <p id="job"> Product Manager </p>
-        <p id="compteur"> <span id="compteur-number">1</span> <span id="compteur-total"> / 21</span> </p>
+        <p id="compteur"> <span id="compteur-number">1</span> <span id="compteur-total"> / 18</span> </p>
       </div>
       <div class="sentence-container">
         <h3>La phrase</h3>
         <p id="colleague-sentence">"Je te cache pas qu'il y a encore un peu de travail"</p>
-        <h4 id="compteur"> <span id="number"> 2 </span> <span id="total">/ 18</span></h4>
+        <h4 id="compteur"> <span id="number"> 1 </span> <span id="total">/ 18</span></h4>
       </div>
     </div>
 
@@ -34,22 +34,54 @@
         <p class="answer"> A</p>
         <p class=name> Sophie-Laetitia</p>
         <p class=last-name> Roux </p>
+        <h5 class="point">+1</h5>
       </div>
       <div class="button">
         <p class="answer"> B</p>
         <p class=name> Morgane</p>
         <p class=last-name> Veaute </p>
+        <h5 class="point">+1</h5>
       </div>
       <div class="button">
         <p class="answer"> C</p>
         <p class=name> François</p>
         <p class=last-name>De La Taste</p>
+        <h5 class="point">+1</h5>
       </div>
       <div class="button">
         <p class="answer"> D</p>
-        <p class=name> François</p>
+        <p class=name>François</p>
         <p class=last-name>De La Taste</p>
+        <h5 class="point">+1</h5>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">🎉  Congratulations!  🎉</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <!-- <span aria-hidden="true">&times;</span> -->
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="first-p"><span id="modal-score"> 18 </span>/ 18 😍</p>
+        <p>Perfect score! King of names 🤴</p>
+        <button type="button" class="btn-1" data-dismiss="modal">👉  Retry  👈</button>
+      </div>
+<!--       <div class="modal-footer">
+        <button type="button" class="btn-2" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn-1">Recommencer</button>
+      </div> -->
     </div>
   </div>
 </div>
