@@ -136,7 +136,8 @@ const trombi = document.querySelector(".trombi");
 const trombiBlock1 = document.getElementById("trombi-block-1");
 const compteurNumber = document.getElementById("compteur-number");
 const scoreDiv = document.getElementById("score");
-const endModal = document.getElementById("endModal");
+//const endModal = document.getElementById("endModal");
+const retryBtn = document.getElementById("retry");
 
 
 
@@ -211,107 +212,158 @@ function selectColleague(team) {
 }
 
 
+function initialize() {
+  teamPop = team;
+  round = 1;
+  score = 0;
+  // Colleague selection
+  colleague = selectColleague(teamPop);
+  // Display the new colleague
+  colleagueDisplay(colleague);
+  // Display the new buttons
+  namesDisplay(colleague);
+  // Display the round
+  compteurNumber.innerText = round;
+  scoreDisplay(score);
+  // Remove the displayed colleague
+  teamPop = teamPop.filter(function(e) { return e !== colleague });
+}
+
+
+function startgame() {
+  teamPop = team;
+  round = 1;
+  score = 0;
+  // Colleague selection
+  colleague = selectColleague(teamPop);
+  // Display the new colleague
+  colleagueDisplay(colleague);
+  // Display the new buttons
+  namesDisplay(colleague);
+  // Display the round
+  compteurNumber.innerText = round;
+  scoreDisplay(score);
+  // Remove the displayed colleague
+  teamPop = teamPop.filter(function(e) { return e !== colleague });
+
+   // Dynamism when click on a button
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function earnPoint(e) {
+
+      colleagueName = photo.dataset.lastname.toLowerCase();
+      nameClicked = this.querySelector(".last-name").innerText.toLowerCase();
+
+      if (colleagueName == nameClicked) {
+        console.log((colleagueName == nameClicked));
+        console.log(colleagueName);
+        console.log(nameClicked);
+
+        if (round < team.length) {
+          round++;
+          score++;
+          scoreDisplay(score);
+          compteurNumber.innerText = round;
+
+          teamPop = teamPop.filter(function(e) { return e !== colleague });
+
+          // Colleague selection
+          colleague = selectColleague(teamPop);
+          // Display the new colleague
+          colleagueDisplay(colleague);
+          // Display the new buttons
+          namesDisplay(colleague);
+
+          ///////////////
+          // ANIMATION //
+          ///////////////
+
+          // New colleague animation
+          trombiBlock1.classList.add('fadein');
+          setTimeout(function () {
+              trombiBlock1.classList.remove('fadein');
+          }, 600)
+
+          // Button animation
+          this.classList.add('pulse');
+          setTimeout(function () {
+              button.classList.remove('pulse');
+          }, 600)
+
+          // Name and last name animations
+          names = document.querySelectorAll(".name");
+          lastNames = document.querySelectorAll(".last-name");
+
+          names.forEach(function (name) {
+            name.classList.add('fadein');
+            setTimeout(function () {
+                name.classList.remove('fadein');
+            }, 600)
+          });
+
+          lastNames.forEach(function (lastName) {
+            lastName.classList.add('fadein');
+            setTimeout(function () {
+                lastName.classList.remove('fadein');
+            }, 600)
+          });
+
+          // Point animation
+          this.querySelector('.point').innerText = '+1'
+          this.querySelector('.point').classList.add('positive', 'display');
+          setTimeout(function () {
+              button.querySelector('.point').classList.remove('positive', 'display');
+          }, 800)
+        } else
+        {
+          // Last score implementation
+          score++;
+          scoreDisplay(score);
+          // Display of the final modal
+          this.setAttribute("data-toggle", "modal");
+          this.setAttribute("data-target", "#endModal");
+          setTimeout(function () {
+            button.removeAttribute("data-toggle");
+            button.removeAttribute("data-target");
+          }, 300)
+          // Restart the game
+          setTimeout(function () {
+            initialize();
+          }, 800)
+        } // End of first ifelse
+      } else {
+        console.log((colleagueName == nameClicked));
+        console.log(colleagueName);
+        console.log(nameClicked);
+        // Decrementing score
+        score--;
+        scoreDisplay(score);
+
+        // Shaking button
+        this.classList.add('shake');
+        setTimeout(function () {
+            button.classList.remove('shake');
+        }, 300)
+
+        // Point animation
+        this.querySelector('.point').innerText = '-1'
+        this.querySelector('.point').classList.add('negative', 'display');
+        setTimeout(function () {
+            button.querySelector('.point').classList.remove('negative', 'display');
+        }, 800)
+      }
+    });
+  });
+}
+
+// Start the game
 let teamPop = team;
 let round = 1;
 let score = 0;
-
-// Colleague selection
-colleague = selectColleague(teamPop);
-// Display the new colleague
-colleagueDisplay(colleague);
-// Display the new buttons
-namesDisplay(colleague);
-teamPop = teamPop.filter(function(e) { return e !== colleague });
-
-
- // Dynamism when click on a button
-buttons.forEach(function (button) {
-  button.addEventListener('click', function (e) {
-
-    colleagueName = photo.dataset.lastname.toLowerCase();
-    nameClicked = this.querySelector(".last-name").innerText.toLowerCase();
-
-    if (colleagueName == nameClicked) {
-      if (round != team.length) {
-        // Colleague selection
-        colleague = selectColleague(teamPop);
-        // Display the new colleague
-        colleagueDisplay(colleague);
-        // Display the new buttons
-        namesDisplay(colleague);
-        teamPop = teamPop.filter(function(e) { return e !== colleague });
-        round++;
-        score++;
-        scoreDisplay(score);
-        compteurNumber.innerText = round;
-
-        ///////////////
-        // ANIMATION //
-        ///////////////
-
-        // New colleague animation
-        trombiBlock1.classList.add('fadein');
-        setTimeout(function () {
-            trombiBlock1.classList.remove('fadein');
-        }, 600)
-
-        // Button animation
-        this.classList.add('pulse');
-        setTimeout(function () {
-            button.classList.remove('pulse');
-        }, 600)
-
-        // Name and last name animations
-        names = document.querySelectorAll(".name");
-        lastNames = document.querySelectorAll(".last-name");
-
-        names.forEach(function (name) {
-          name.classList.add('fadein');
-          setTimeout(function () {
-              name.classList.remove('fadein');
-          }, 600)
-        });
-
-        lastNames.forEach(function (lastName) {
-          lastName.classList.add('fadein');
-          setTimeout(function () {
-              lastName.classList.remove('fadein');
-          }, 600)
-        });
-
-        // Point animation
-        this.querySelector('.point').innerText = '+1'
-        this.querySelector('.point').classList.add('positive', 'display');
-        setTimeout(function () {
-            button.querySelector('.point').classList.remove('positive', 'display');
-        }, 800)
-      } else
-      {
-        // End of the game modal
-        this.setAttribute("data-toggle", "modal");
-        this.setAttribute("data-target", "#endModal");
-      } // End of first ifelse
-    } else {
-      // Decrementing score
-      score--;
-      scoreDisplay(score);
-
-      // Shaking button
-      this.classList.add('shake');
-      setTimeout(function () {
-          button.classList.remove('shake');
-      }, 300)
-
-      // Point animation
-      this.querySelector('.point').innerText = '-1'
-      this.querySelector('.point').classList.add('negative', 'display');
-      setTimeout(function () {
-          button.querySelector('.point').classList.remove('negative', 'display');
-      }, 800)
-    }
-  });
+startgame();
+// Restart the game on click
+retryBtn.addEventListener('click', function (e) {
+  initialize();
 });
-
 
 
 // id = getRandomInt(11);
