@@ -5346,3 +5346,519 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 2996ms (Views: 2733.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:20:53 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (48.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4864ms (Views: 4856.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:21:17 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 109ms (Views: 107.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:23:48 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (11.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3819ms (Views: 3812.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:24:49 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3756ms (Views: 3752.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:26:02 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3922ms (Views: 3916.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:30:22 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (9.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4156ms (Views: 4150.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:55:57 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (38.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 9215ms (Views: 9204.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:57:01 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4431ms (Views: 4426.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:57:29 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4025ms (Views: 4020.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:58:49 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 87ms (Views: 82.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 19:59:03 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 85ms (Views: 81.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:00:52 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 96ms (Views: 92.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:01:41 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 3694ms (Views: 3690.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:02:40 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2234ms (Views: 2230.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:02:59 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 2662ms (Views: 2655.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:07:01 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 99ms (Views: 95.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:07:11 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 123ms (Views: 118.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:11:05 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 108ms (Views: 105.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:11:34 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2568ms (Views: 2563.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:12:01 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 2544ms (Views: 2537.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:12:30 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 2204ms (Views: 2198.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:12:50 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2552ms (Views: 2548.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:13:31 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 115ms (Views: 111.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:14:44 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 3843ms (Views: 3839.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:15:17 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 2190ms (Views: 2186.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:17:11 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 85ms (Views: 81.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:21:33 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4577ms (Views: 4472.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:23:30 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4041ms (Views: 4037.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:23:49 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3111ms (Views: 3107.4ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/abdellah.jpeg.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/marie.jpeg.jpg"):
+  
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tristan.jpeg.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/assets/thibaut.jpeg.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/assets/sophie-laetitia.jpeg.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:25:13 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 5930ms (Views: 5925.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:29:07 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 2520ms (Views: 2490.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:31:50 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4970ms (Views: 4966.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:35:37 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4477ms (Views: 4471.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:39:19 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (22.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3962ms (Views: 3952.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:40:11 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4244ms (Views: 4235.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:41:48 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (15.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4311ms (Views: 4305.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:42:12 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3864ms (Views: 3861.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:43:56 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4484ms (Views: 4477.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:47:44 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (10.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 4452ms (Views: 4449.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:48:01 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3077ms (Views: 3072.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-27 20:48:48 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/Tanguy/code/TFoujols/trombinoscope-dv/public/packs
+Completed 200 OK in 3894ms (Views: 3890.0ms)
+
+

@@ -60,11 +60,15 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endModal">
-  Launch demo modal
+  Launch no perfect modal
 </button>
 
-<!-- Modal -->
-<div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endPerfectModal">
+  Launch perfect modal
+</button>
+
+<!-- Perfect end Modal -->
+<div class="modal fade" id="endPerfectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -74,14 +78,34 @@
         </button>
       </div>
       <div class="modal-body">
-        <p id="first-p"><span id="modal-score"> 18 </span>/ 18 😍</p>
-        <p>Perfect score! King of names 🤴</p>
-        <button type="button" class="btn-1" data-dismiss="modal" id="retry">👉  Retry  👈</button>
+        <p id="first-p"> 18 / 18 😍</p>
+        <p>King of names 🤴</p>
+        <button type="button" class="btn-1 retry" data-dismiss="modal">👉  Retry  👈</button>
       </div>
-<!--       <div class="modal-footer">
-        <button type="button" class="btn-2" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn-1">Recommencer</button>
-      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+<div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Hum... <span id="modal-score"> 16 </span>/ 18 </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <!-- <span aria-hidden="true">&times;</span> -->
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Y'a encore du boulot ! Notamment sur les suivants :</p>
+        <div class="forgotten-colleagues">
+<!--           <div class="forgotten-colleague">
+            <img class="photo" src="/assets/francois.jpg">
+            <p class="name"> François </p>
+          </div> -->
+        </div>
+        <button type="button" class="btn-1 retry" data-dismiss="modal">👉  Retry  👈</button>
+      </div>
     </div>
   </div>
 </div>

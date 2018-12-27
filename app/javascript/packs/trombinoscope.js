@@ -4,126 +4,144 @@ const team = [
     lastName: "Bury",
     img:      "romain.jpeg",
     job:      "Consultant senior",
-    sentence: "Texte de bury"
+    sentence: "Texte de bury",
+    id:       0
   },
   {
     name:     "François",
     lastName: "de la Taste",
     img:      "francois.jpeg",
     job:      "Product Manager",
-    sentence: "Je ne te cache pas que"
+    sentence: "Je ne te cache pas que",
+    id:       1
   },
   {
     name:     "Alice",
     lastName: "Wu",
     img:      "alice.jpeg",
     job:      "Consultante senior",
-    sentence: "Laisse la"
+    sentence: "Laisse la",
+    id:       2
   },
   {
     name:     "Morgane",
     lastName: "Veaute",
     img:      "morgane.jpeg",
     job:      "Consultante",
-    sentence: "text morgane"
+    sentence: "text morgane",
+    id:       3
   },
   {
     name:     "Marie",
     lastName: "Cointe",
     img:      "marie.jpeg",
     job:      "Consultante",
-    sentence: "text marie"
+    sentence: "text marie",
+    id:       4
   },
   {
     name:     "Paul-Henri",
     lastName: "Magnien",
     img:      "paul-henri.jpeg",
     job:      "Directeur associé",
-    sentence: "Je te cache pas qu'il y a encore un peu de travail..."
+    sentence: "Je te cache pas qu'il y a encore un peu de travail...",
+    id:       5
   },
   {
     name:     "Abdellah",
     lastName: "Moutaçalli",
     img:      "abdellah.jpeg",
     job:      "Directeur associé",
-    sentence: "La Reine des Neiges est merveilleuse !"
+    sentence: "La Reine des Neiges est merveilleuse !",
+    id:       6
   },
   {
     name:     "Arnaud",
     lastName: "de Baynast",
     img:      "arnaud.jpeg",
     job:      "Directeur général",
-    sentence: "Non mais là faut être plus sérieux"
+    sentence: "Non mais là faut être plus sérieux",
+    id:       7
   },
   {
     name:     "Arthur",
     lastName: "Legrand",
     img:      "arthur.jpeg",
     job:      "Consultant",
-    sentence: "Tellement STRRRAAAAT !"
+    sentence: "Tellement STRRRAAAAT !",
+    id:       8
   },
   {
     name:     "Kevin",
     lastName: "Dreux",
     img:      "kevin.jpeg",
     job:      "Consultant senior",
-    sentence: "Total c'est"
+    sentence: "Total c'est",
+    id:       9
   },
   {
     name:     "Nathalie",
     lastName: "Boyer",
     img:      "nathalie.jpeg",
     job:      "Contrôleuse de gestion",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       10
   },
   {
     name:     "Rodolphe",
     lastName: "Trancart",
     img:      "rodolphe.jpeg",
     job:      "Consultant",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       11
   },
   {
     name:     "Sacha",
     lastName: "Bellaiche",
     img:      "sacha.jpeg",
     job:      "Consultant",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       12
   },
   {
     name:     "Tanguy",
     lastName: "Foujols",
     img:      "tanguy.png",
     job:      "Consultant",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       13
   },
   {
     name:     "Thibaut",
     lastName: "Barondeau",
     img:      "thibaut.jpeg",
     job:      "Consultant",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       14
   },
   {
     name:     "Tristan",
     lastName: "Puech",
     img:      "tristan.jpeg",
     job:      "Consultant",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       15
   },
   {
     name:     "Xudong",
     lastName: "Zhang",
     img:      "xudong.jpeg",
     job:      "Consultant",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       16
   },
   {
     name:     "Sophie-Laetitia",
     lastName: "Roux",
     img:      "sophie-laetitia.jpeg",
     job:      "Consultante senior",
-    sentence: "J'en peux pluus !"
+    sentence: "J'en peux pluus !",
+    id:       17
   }
 ]
 
@@ -136,8 +154,11 @@ const trombi = document.querySelector(".trombi");
 const trombiBlock1 = document.getElementById("trombi-block-1");
 const compteurNumber = document.getElementById("compteur-number");
 const scoreDiv = document.getElementById("score");
+const scoreSpan = document.getElementById("modal-score");
+//const forgottenColleaguesImg = document.querySelectorAll(".forgotten-colleagues .photo");
+const forgottenColleaguesDiv = document.querySelector(".forgotten-colleagues");
 //const endModal = document.getElementById("endModal");
-const retryBtn = document.getElementById("retry");
+const retryButtons = document.querySelectorAll(".retry");
 
 
 
@@ -182,6 +203,7 @@ function shuffle(a) {
 function colleagueDisplay(colleague) {
   photo.src = `/assets/${colleague.img}`;
   photo.setAttribute("data-lastname", colleague.lastName);
+  photo.setAttribute("data-id", colleague.id);
   sentence.innerText = colleague.sentence;
   job.innerText = colleague.job;
 }
@@ -216,6 +238,8 @@ function initialize() {
   teamPop = team;
   round = 1;
   score = 0;
+  forgottenColleagues = [];
+  uniqueForgottenColleagues = [];
   // Colleague selection
   colleague = selectColleague(teamPop);
   // Display the new colleague
@@ -231,9 +255,12 @@ function initialize() {
 
 
 function startgame() {
+  // Initialize the game
   teamPop = team;
   round = 1;
   score = 0;
+  forgottenColleagues = [];
+  uniqueForgottenColleagues = [];
   // Colleague selection
   colleague = selectColleague(teamPop);
   // Display the new colleague
@@ -250,13 +277,11 @@ function startgame() {
   buttons.forEach(function (button) {
     button.addEventListener('click', function earnPoint(e) {
 
+      colleagueId = photo.dataset.id;
       colleagueName = photo.dataset.lastname.toLowerCase();
       nameClicked = this.querySelector(".last-name").innerText.toLowerCase();
 
       if (colleagueName == nameClicked) {
-        console.log((colleagueName == nameClicked));
-        console.log(colleagueName);
-        console.log(nameClicked);
 
         if (round < team.length) {
           round++;
@@ -320,7 +345,23 @@ function startgame() {
           scoreDisplay(score);
           // Display of the final modal
           this.setAttribute("data-toggle", "modal");
-          this.setAttribute("data-target", "#endModal");
+          if (score == team.length) {
+            this.setAttribute("data-target", "#endPerfectModal");
+          } else {
+            // Display score
+            scoreSpan.innerText = score;
+
+            // Display forgotten colleagues
+            uniqueForgottenColleagues = shuffle(Array.from(new Set(forgottenColleagues)));
+
+            uniqueForgottenColleagues.forEach(function (id) {
+              colleague = team[id];
+              forgottenColleaguesDiv.innerHTML += `<div class="forgotten-colleague"><img class="photo" src="/assets/${colleague.img}"><p class="name"> ${colleague.name} </p></div>`
+            });
+
+            // Display the modal
+            this.setAttribute("data-target", "#endModal");
+          }
           setTimeout(function () {
             button.removeAttribute("data-toggle");
             button.removeAttribute("data-target");
@@ -331,9 +372,6 @@ function startgame() {
           }, 800)
         } // End of first ifelse
       } else {
-        console.log((colleagueName == nameClicked));
-        console.log(colleagueName);
-        console.log(nameClicked);
         // Decrementing score
         score--;
         scoreDisplay(score);
@@ -343,6 +381,10 @@ function startgame() {
         setTimeout(function () {
             button.classList.remove('shake');
         }, 300)
+
+        // Save the forgotten colleague
+        forgottenColleagues.push(colleagueId);
+        console.log(forgottenColleagues);
 
         // Point animation
         this.querySelector('.point').innerText = '-1'
@@ -359,10 +401,16 @@ function startgame() {
 let teamPop = team;
 let round = 1;
 let score = 0;
+let forgottenColleagues = [];
+let uniqueForgottenColleagues = [];
 startgame();
 // Restart the game on click
-retryBtn.addEventListener('click', function (e) {
-  initialize();
+retryButtons.forEach(function (retryButton) {
+  retryButton.addEventListener('click', function (e) {
+    initialize();
+    // Clean the end modal
+    forgottenColleaguesDiv.innerHTML = '';
+  });
 });
 
 
