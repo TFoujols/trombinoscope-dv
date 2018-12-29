@@ -18,6 +18,20 @@
   #hum {
     font-size: 34px !important;
   }
+
+  .forgotten-colleagues {
+    .photo {
+      margin: 16px 10px 5px 10px !important;
+      width: 64px !important;
+      height: 64px !important;
+      border: 2px solid $light-gray !important;
+    }
+
+    .name {
+      font-size: 14px !important;
+      font-weight: 400;
+    }
+  }
 }
 
 .modal-dialog {
