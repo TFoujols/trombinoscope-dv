@@ -1,3 +1,24 @@
+const loadingDiv = document.getElementById("loading-container");
+const gameDiv = document.getElementById("game-container");
+const title1 = document.querySelector(".header h1");
+const title2 = document.querySelector(".header h2");
+
+$(document).ready(function() {
+setTimeout(function(){
+  title2.classList.add('visible');
+      },100);
+
+setTimeout(function(){
+  title1.classList.add('visible');
+      },400);
+
+setTimeout(function(){
+  loadingDiv.classList.add('invisible');
+  gameDiv.classList.add('visible');
+      },400);
+})
+
+
 const team = [
   {
     name:     "Romain",

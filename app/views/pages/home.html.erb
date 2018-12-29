@@ -1,111 +1,125 @@
-<!-- Header -->
-<div class="header">
-  <h2>DV Burger Quiz</h2>
-  <h1>And who am I?</h1>
-  <div id="score-container">
-    <p id="score-title"> Score </p>
-    <p id="score"> 0 </p>
+<!-- Loading page -->
+<div id="loading-container">
+  <div class="header">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" preserveAspectRatio="none">
+      <polygon fill="#F4F4F4" points="0,20 20,0 20,20"/>
+    </svg>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" preserveAspectRatio="none">
-    <polygon fill="#F4F4F4" points="0,20 20,0 20,20"/>
-  </svg>
-</div>
-
-<!-- Trombinoscope -->
-<div class="trombi-container">
-  <div class="trombi">
-
-    <div class="trombi-block" id="trombi-block-1">
-      <div class="photo-container">
-        <%= image_tag("francois.jpeg", id: "colleague-photo", class: "photo", data: { lastname: "De La Taste"
-        } ) %>
-        <p id="job"> Product Manager </p>
-        <p id="compteur"> <span id="compteur-number">1</span> <span id="compteur-total"> / 18</span> </p>
-      </div>
-      <div class="sentence-container">
-        <h3>La phrase</h3>
-        <p id="colleague-sentence">"Je te cache pas qu'il y a encore un peu de travail"</p>
-        <h4 id="compteur"> <span id="number"> 1 </span> <span id="total">/ 18</span></h4>
-      </div>
-    </div>
-
-    <div class="trombi-block" id="buttons">
-      <div class="button">
-        <p class="answer"> A</p>
-        <p class=name> Sophie-Laetitia</p>
-        <p class=last-name> Roux </p>
-        <h5 class="point">+1</h5>
-      </div>
-      <div class="button">
-        <p class="answer"> B</p>
-        <p class=name> Morgane</p>
-        <p class=last-name> Veaute </p>
-        <h5 class="point">+1</h5>
-      </div>
-      <div class="button">
-        <p class="answer"> C</p>
-        <p class=name> François</p>
-        <p class=last-name>De La Taste</p>
-        <h5 class="point">+1</h5>
-      </div>
-      <div class="button">
-        <p class="answer"> D</p>
-        <p class=name>François</p>
-        <p class=last-name>De La Taste</p>
-        <h5 class="point">+1</h5>
-      </div>
-    </div>
+  <div id="bloc">
+    <div class="loader"></div>
   </div>
 </div>
 
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endModal">
-  Launch no perfect modal
-</button>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endPerfectModal">
-  Launch perfect modal
-</button> -->
 
-<!-- Perfect end Modal -->
-<div class="modal fade" id="endPerfectModal" tabindex="-1" role="dialog" aria-labelledby="congratulations" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="congratulations">🎉  Congratulations!  🎉</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <!-- <span aria-hidden="true">&times;</span> -->
-        </button>
-      </div>
-      <div class="modal-body">
-        <p id="first-p"> 18 / 18 😍 </p>
-        <p>You're the new king of names 🤴</p>
-        <button type="button" class="btn-1 retry" data-dismiss="modal">👉  Retry  👈</button>
-      </div>
+  <!-- Header -->
+  <div class="header">
+    <h2>DV Burger Quiz</h2>
+    <h1>And who am I?</h1>
+    <div id="score-container">
+      <p id="score-title"> Score </p>
+      <p id="score"> 0 </p>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" preserveAspectRatio="none">
+      <polygon fill="#F4F4F4" points="0,20 20,0 20,20"/>
+    </svg>
   </div>
-</div>
 
-<!-- End Modal -->
-<div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="hum" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="hum"> Hum... <span id="modal-score"> 16 </span>/ 18 😬🤯</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <!-- <span aria-hidden="true">&times;</span> -->
-        </button>
-      </div>
-      <div class="modal-body">
-        <p> There is still much work to be done! Especially concerning:</p>
-        <div class="forgotten-colleagues">
-<!--           <div class="forgotten-colleague">
-            <img class="photo" src="/assets/francois.jpg">
-            <p class="name"> François </p>
-          </div> -->
+  <!-- Trombinoscope -->
+  <div class="trombi-container" id="game-container">
+    <div class="trombi">
+
+      <div class="trombi-block" id="trombi-block-1">
+        <div class="photo-container">
+          <%= image_tag("francois.jpeg", id: "colleague-photo", class: "photo", data: { lastname: "De La Taste"
+          } ) %>
+          <p id="job"> Product Manager </p>
+          <p id="compteur"> <span id="compteur-number">1</span> <span id="compteur-total"> / 18</span> </p>
         </div>
-        <button type="button" class="btn-1 retry" data-dismiss="modal">👉  Retry  👈</button>
+        <div class="sentence-container">
+          <h3>La phrase</h3>
+          <p id="colleague-sentence">"Je te cache pas qu'il y a encore un peu de travail"</p>
+          <h4 id="compteur"> <span id="number"> 1 </span> <span id="total">/ 18</span></h4>
+        </div>
+      </div>
+
+      <div class="trombi-block" id="buttons">
+        <div class="button">
+          <p class="answer"> A</p>
+          <p class=name> Sophie-Laetitia</p>
+          <p class=last-name> Roux </p>
+          <h5 class="point">+1</h5>
+        </div>
+        <div class="button">
+          <p class="answer"> B</p>
+          <p class=name> Morgane</p>
+          <p class=last-name> Veaute </p>
+          <h5 class="point">+1</h5>
+        </div>
+        <div class="button">
+          <p class="answer"> C</p>
+          <p class=name> François</p>
+          <p class=last-name>De La Taste</p>
+          <h5 class="point">+1</h5>
+        </div>
+        <div class="button">
+          <p class="answer"> D</p>
+          <p class=name>François</p>
+          <p class=last-name>De La Taste</p>
+          <h5 class="point">+1</h5>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endModal">
+    Launch no perfect modal
+  </button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#endPerfectModal">
+    Launch perfect modal
+  </button> -->
+
+  <!-- Perfect end Modal -->
+  <div class="modal fade" id="endPerfectModal" tabindex="-1" role="dialog" aria-labelledby="congratulations" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="congratulations">🎉  Congratulations!  🎉</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="first-p"> 18 / 18 😍 </p>
+          <p>You're the new king of names 🤴</p>
+          <button type="button" class="btn-1 retry" data-dismiss="modal">👉  Retry  👈</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Modal -->
+  <div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="hum" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hum"> Hum... <span id="modal-score"> 16 </span>/ 18 😬🤯</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!-- <span aria-hidden="true">&times;</span> -->
+          </button>
+        </div>
+        <div class="modal-body">
+          <p> There is still much work to be done! Especially concerning:</p>
+          <div class="forgotten-colleagues">
+  <!--           <div class="forgotten-colleague">
+              <img class="photo" src="/assets/francois.jpg">
+              <p class="name"> François </p>
+            </div> -->
+          </div>
+          <button type="button" class="btn-1 retry" data-dismiss="modal">👉  Retry  👈</button>
+        </div>
+      </div>
+    </div>
+  </div>
