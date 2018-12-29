@@ -1,4 +1,24 @@
 // MODAL CONTENT
+@media screen and (max-width: 800px)
+{
+  .modal-dialog {
+    width: 100% !important;
+    margin: auto !important;
+  }
+
+  .modal-content {
+    border-radius: 0px !important;
+    height: 100vh;
+  }
+
+  #congratulations {
+    font-size: 26px !important;
+  }
+
+  #hum {
+    font-size: 34px !important;
+  }
+}
 
 .modal-dialog {
   width: 800px ;
