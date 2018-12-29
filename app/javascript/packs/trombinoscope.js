@@ -3,7 +3,7 @@ const team = [
     name:     "Romain",
     lastName: "Bury",
     img:      "romain.jpeg",
-    job:      "Consultant senior",
+    job:      "Senior Consultant",
     sentence: "Texte de bury",
     id:       0
   },
@@ -19,7 +19,7 @@ const team = [
     name:     "Alice",
     lastName: "Wu",
     img:      "alice.jpeg",
-    job:      "Consultante senior",
+    job:      "Senior Consultant",
     sentence: "Laisse la",
     id:       2
   },
@@ -27,7 +27,7 @@ const team = [
     name:     "Morgane",
     lastName: "Veaute",
     img:      "morgane.jpeg",
-    job:      "Consultante",
+    job:      "Consultant",
     sentence: "text morgane",
     id:       3
   },
@@ -35,7 +35,7 @@ const team = [
     name:     "Marie",
     lastName: "Cointe",
     img:      "marie.jpeg",
-    job:      "Consultante",
+    job:      "Consultant",
     sentence: "text marie",
     id:       4
   },
@@ -43,7 +43,7 @@ const team = [
     name:     "Paul-Henri",
     lastName: "Magnien",
     img:      "paul-henri.jpeg",
-    job:      "Directeur associé",
+    job:      "Associate Director",
     sentence: "Je te cache pas qu'il y a encore un peu de travail...",
     id:       5
   },
@@ -51,7 +51,7 @@ const team = [
     name:     "Abdellah",
     lastName: "Moutaçalli",
     img:      "abdellah.jpeg",
-    job:      "Directeur associé",
+    job:      "Associate Director",
     sentence: "La Reine des Neiges est merveilleuse !",
     id:       6
   },
@@ -59,7 +59,7 @@ const team = [
     name:     "Arnaud",
     lastName: "de Baynast",
     img:      "arnaud.jpeg",
-    job:      "Directeur général",
+    job:      "CEO",
     sentence: "Non mais là faut être plus sérieux",
     id:       7
   },
@@ -75,7 +75,7 @@ const team = [
     name:     "Kevin",
     lastName: "Dreux",
     img:      "kevin.jpeg",
-    job:      "Consultant senior",
+    job:      "Senior Consultant",
     sentence: "Total c'est",
     id:       9
   },
@@ -83,7 +83,7 @@ const team = [
     name:     "Nathalie",
     lastName: "Boyer",
     img:      "nathalie.jpeg",
-    job:      "Contrôleuse de gestion",
+    job:      "Financial Controller",
     sentence: "J'en peux pluus !",
     id:       10
   },
@@ -139,7 +139,7 @@ const team = [
     name:     "Sophie-Laetitia",
     lastName: "Roux",
     img:      "sophie-laetitia.jpeg",
-    job:      "Consultante senior",
+    job:      "Senior Consultant",
     sentence: "J'en peux pluus !",
     id:       17
   }
