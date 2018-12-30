@@ -1,15 +1,12 @@
 <!-- Loading page -->
-<div id="loading-container">
+<!-- <div id="loading-container">
   <div class="header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" preserveAspectRatio="none">
       <polygon fill="#F4F4F4" points="0,20 20,0 20,20"/>
     </svg>
   </div>
   <div class="loader"></div>
-<!--
-  <div id="bloc">
-  </div> -->
-</div>
+</div> -->
 
 
 
@@ -27,6 +24,7 @@
   </div>
 
   <!-- Trombinoscope -->
+  <div class="loader"></div>
   <div class="trombi-container" id="game-container">
     <div class="trombi">
 
@@ -125,23 +123,3 @@
     </div>
   </div>
 
-  <script>
-    const loadingDiv = document.getElementById("loading-container");
-    const gameDiv = document.getElementById("game-container");
-    const title1 = document.querySelector(".header h1");
-    const title2 = document.querySelector(".header h2");
-
-    setTimeout(function(){
-      title2.classList.add('visible');
-          },1000100);
-
-    setTimeout(function(){
-      title1.classList.add('visible');
-          },1000400);
-
-    setTimeout(function(){
-      loadingDiv.parentNode.removeChild(loadingDiv);
-
-      gameDiv.classList.add('visible');
-          },1000400);
-  </script>
