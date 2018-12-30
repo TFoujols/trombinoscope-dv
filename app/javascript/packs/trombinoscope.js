@@ -21,7 +21,7 @@ const team = [
   {
     name:     "Romain",
     lastName: "Bury",
-    img:      "romain.jpg",
+    img:      "romain-5ade031564f7573c58fea183564dddca5143277836bb8c232db375990b681378.jpg",
     job:      "Senior Consultant",
     sentence: "Texte de bury",
     id:       0
@@ -29,7 +29,7 @@ const team = [
   {
     name:     "François",
     lastName: "de la Taste",
-    img:      "francois.jpg",
+    img:      "francois-1745ba54ff7e4ad43dd48667a5bbbdfbc9c6c3dcbd7212aa1c46b6cc80f2e888.jpg",
     job:      "Product Manager",
     sentence: "Je ne te cache pas que",
     id:       1
@@ -45,7 +45,7 @@ const team = [
   {
     name:     "Morgane",
     lastName: "Veaute",
-    img:      "morgane.jpg",
+    img:      "morgane-9e55bc8155217d1c55c20df22eebdde52850d75a9a53b2a1db67f2acdb13a24e.jpg",
     job:      "Consultant",
     sentence: "text morgane",
     id:       3
@@ -53,7 +53,7 @@ const team = [
   {
     name:     "Marie",
     lastName: "Cointe",
-    img:      "marie.jpg",
+    img:      "marie-df47885d465e358183d23fb2a24ca12ba4b0292f2ac637418ea862d3cbebf23d.jpg",
     job:      "Consultant",
     sentence: "text marie",
     id:       4
@@ -61,7 +61,7 @@ const team = [
   {
     name:     "Paul-Henri",
     lastName: "Magnien",
-    img:      "paul-henri.jpg",
+    img:      "paul-henri-8c41e831034777d391fc00d181b0e06a2165d22dc441404e6587bd444852b52b.jpg",
     job:      "Associate Director",
     sentence: "Je te cache pas qu'il y a encore un peu de travail...",
     id:       5
@@ -69,7 +69,7 @@ const team = [
   {
     name:     "Abdellah",
     lastName: "Moutaçalli",
-    img:      "abdellah.jpg",
+    img:      "abdellah-4d2bcc147cb7687c94c5a47f5707587e1e6c3eef52234ed6dbda45c849bbde49.jpg",
     job:      "Associate Director",
     sentence: "La Reine des Neiges est merveilleuse !",
     id:       6
@@ -77,7 +77,7 @@ const team = [
   {
     name:     "Arnaud",
     lastName: "de Baynast",
-    img:      "arnaud.jpg",
+    img:      "arnaud-c420f1179de163f535ea18ceb4874db6fe567955a1c6ac0df290017b0f1bc882.jpg",
     job:      "CEO",
     sentence: "Non mais là faut être plus sérieux",
     id:       7
@@ -85,7 +85,7 @@ const team = [
   {
     name:     "Arthur",
     lastName: "Legrand",
-    img:      "arthur.jpg",
+    img:      "arthur-b2e622bddeb504fa6e9bdc176a21c34b6c65f0a99601a1efedf2d21a708a7118.jpg",
     job:      "Consultant",
     sentence: "Tellement STRRRAAAAT !",
     id:       8
@@ -93,7 +93,7 @@ const team = [
   {
     name:     "Kevin",
     lastName: "Dreux",
-    img:      "kevin.jpg",
+    img:      "kevin-99a379094e85a56465e6e6f812afa88ec94416cea50972b4a9ba82351a89f00b.jpg",
     job:      "Senior Consultant",
     sentence: "Total c'est",
     id:       9
@@ -101,7 +101,7 @@ const team = [
   {
     name:     "Nathalie",
     lastName: "Boyer",
-    img:      "nathalie.jpg",
+    img:      "nathalie-72f3f8f88ac9f58b07d516572eed7c2efba9dce3eb46d12c250b0c4c105b1d35.jpg",
     job:      "Financial Controller",
     sentence: "J'en peux pluus !",
     id:       10
@@ -109,7 +109,7 @@ const team = [
   {
     name:     "Rodolphe",
     lastName: "Trancart",
-    img:      "rodolphe.jpg",
+    img:      "rodolphe-576a4f59e1e32295542b6649d26e8bface283c739340985cc586ceb64e3a85e1.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       11
@@ -117,7 +117,7 @@ const team = [
   {
     name:     "Sacha",
     lastName: "Bellaiche",
-    img:      "sacha.jpg",
+    img:      "sacha-31655e51eaff41dbc9a5adc3384b3c4545461ac6b589aee791a9f8ad58923976.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       12
@@ -125,7 +125,7 @@ const team = [
   {
     name:     "Tanguy",
     lastName: "Foujols",
-    img:      "tanguy.jpg",
+    img:      "tanguy-004b6dacefe9e1c6b871d96648285b19553bdff7b288d23f5ca63de2839d4642.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       13
@@ -133,7 +133,7 @@ const team = [
   {
     name:     "Thibaut",
     lastName: "Barondeau",
-    img:      "thibaut.jpg",
+    img:      "thibaut-4a09659477fd64574fa001db69e78147074460fa6c12a5712360298c6f7ffae1.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       14
@@ -141,7 +141,7 @@ const team = [
   {
     name:     "Tristan",
     lastName: "Puech",
-    img:      "tristan.jpg",
+    img:      "tristan-32ea05c1cde191cce38d27db0208b1ca1ba4f8d49298cf484cd6f47f5a03beb8.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       15
@@ -149,7 +149,7 @@ const team = [
   {
     name:     "Xudong",
     lastName: "Zhang",
-    img:      "xudong.jpg",
+    img:      "xudong-994d222eb845e88c9a334ef10c28d8494edb88073f3d68d5110ee8e0ae474ee6.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       16
@@ -157,7 +157,7 @@ const team = [
   {
     name:     "Sophie-Laetitia",
     lastName: "Roux",
-    img:      "sophie-laetitia.jpg",
+    img:      "sophie-laetitia-93ac3750a278df70b9d6ba17e770c0f843216b75bb1966838ab34ed56d5a1d44.jpg",
     job:      "Senior Consultant",
     sentence: "J'en peux pluus !",
     id:       17
@@ -220,7 +220,6 @@ function shuffle(a) {
 
 // Function to display the new colleague
 function colleagueDisplay(colleague) {
-  colleague = team[2];
   photo.src = `/assets/${colleague.img}`;
   photo.setAttribute("data-lastname", colleague.lastName);
   photo.setAttribute("data-id", colleague.id);
