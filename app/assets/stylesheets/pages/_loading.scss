@@ -1,9 +1,19 @@
-#loading-container {
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(60deg, $green-1, $green);
+  color: white;
+}
 
+#loading-container {
     // display: flex;
     // justify-content: center;
     // align-items: center;
-    // height: 100vh;
+    height: 100vh;
     // width: 100vw;
     // background-image: linear-gradient(60deg, $green-1, $green);
 }
@@ -42,6 +52,12 @@
   opacity: 0.6;
   transform: translateX(0px);
 }
+
+
+
+
+
+
 
 
 .loader,

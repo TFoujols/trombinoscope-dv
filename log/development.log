@@ -7606,3 +7606,57 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 117ms (Views: 113.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-12-30 01:34:03 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 833ms
+
+
+  
+ActionView::Template::Error (Error: property "loading" must be followed by a ':'
+        on line 8 of app/assets/stylesheets/pages/_loading.scss
+        from line 4 of app/assets/stylesheets/pages/_index.scss
+        from line 15 of app/assets/stylesheets/application.scss
+>> loading  background-image: linear-gradient(60deg, $green-1, $green);
+
+   ^
+):
+     6:     <title>DV QUIZZ</title>
+     7:     <%= csrf_meta_tags %>
+     8:     <%= action_cable_meta_tag %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    10:     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    11:   </head>
+    12:   <body>
+  
+app/assets/stylesheets/pages/_loading.scss:8
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___301076085752621203_70341518066700'
+Started GET "/" for 127.0.0.1 at 2018-12-30 01:34:24 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 2333ms (Views: 2329.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-30 01:35:44 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 2832ms (Views: 2828.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-30 01:36:41 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 3391ms (Views: 3361.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-30 01:37:16 +0100
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 4767ms (Views: 4762.0ms)
+
+
