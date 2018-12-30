@@ -274,7 +274,8 @@ function shuffle(a) {
 
 // Function to display the new colleague
 function colleagueDisplay(colleague) {
-  photo.src = `/assets/${colleague.img}`;
+  // photo.src = `/assets/${colleague.img}`;
+  photo.src = "<%= asset_url(`${colleague.img}`) %>";
   photo.setAttribute("data-lastname", colleague.lastName);
   photo.setAttribute("data-id", colleague.id);
   sentence.innerText = colleague.sentence;
@@ -552,4 +553,4 @@ retryButtons.forEach(function (retryButton) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=trombinoscope-073ca6ab44ee626df21a.js.map
+//# sourceMappingURL=trombinoscope-f8a3fc13d438f9e59102.js.map

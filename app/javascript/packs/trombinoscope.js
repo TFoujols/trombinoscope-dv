@@ -21,7 +21,7 @@ const team = [
   {
     name:     "Romain",
     lastName: "Bury",
-    img:      "romain.jpeg",
+    img:      "romain.jpg",
     job:      "Senior Consultant",
     sentence: "Texte de bury",
     id:       0
@@ -29,7 +29,7 @@ const team = [
   {
     name:     "François",
     lastName: "de la Taste",
-    img:      "francois.jpeg",
+    img:      "francois.jpg",
     job:      "Product Manager",
     sentence: "Je ne te cache pas que",
     id:       1
@@ -37,7 +37,7 @@ const team = [
   {
     name:     "Alice",
     lastName: "Wu",
-    img:      "alice.jpeg",
+    img:      "alice.jpg",
     job:      "Senior Consultant",
     sentence: "Laisse la",
     id:       2
@@ -45,7 +45,7 @@ const team = [
   {
     name:     "Morgane",
     lastName: "Veaute",
-    img:      "morgane.jpeg",
+    img:      "morgane.jpg",
     job:      "Consultant",
     sentence: "text morgane",
     id:       3
@@ -53,7 +53,7 @@ const team = [
   {
     name:     "Marie",
     lastName: "Cointe",
-    img:      "marie.jpeg",
+    img:      "marie.jpg",
     job:      "Consultant",
     sentence: "text marie",
     id:       4
@@ -61,7 +61,7 @@ const team = [
   {
     name:     "Paul-Henri",
     lastName: "Magnien",
-    img:      "paul-henri.jpeg",
+    img:      "paul-henri.jpg",
     job:      "Associate Director",
     sentence: "Je te cache pas qu'il y a encore un peu de travail...",
     id:       5
@@ -69,7 +69,7 @@ const team = [
   {
     name:     "Abdellah",
     lastName: "Moutaçalli",
-    img:      "abdellah.jpeg",
+    img:      "abdellah.jpg",
     job:      "Associate Director",
     sentence: "La Reine des Neiges est merveilleuse !",
     id:       6
@@ -77,7 +77,7 @@ const team = [
   {
     name:     "Arnaud",
     lastName: "de Baynast",
-    img:      "arnaud.jpeg",
+    img:      "arnaud.jpg",
     job:      "CEO",
     sentence: "Non mais là faut être plus sérieux",
     id:       7
@@ -85,7 +85,7 @@ const team = [
   {
     name:     "Arthur",
     lastName: "Legrand",
-    img:      "arthur.jpeg",
+    img:      "arthur.jpg",
     job:      "Consultant",
     sentence: "Tellement STRRRAAAAT !",
     id:       8
@@ -93,7 +93,7 @@ const team = [
   {
     name:     "Kevin",
     lastName: "Dreux",
-    img:      "kevin.jpeg",
+    img:      "kevin.jpg",
     job:      "Senior Consultant",
     sentence: "Total c'est",
     id:       9
@@ -101,7 +101,7 @@ const team = [
   {
     name:     "Nathalie",
     lastName: "Boyer",
-    img:      "nathalie.jpeg",
+    img:      "nathalie.jpg",
     job:      "Financial Controller",
     sentence: "J'en peux pluus !",
     id:       10
@@ -109,7 +109,7 @@ const team = [
   {
     name:     "Rodolphe",
     lastName: "Trancart",
-    img:      "rodolphe.jpeg",
+    img:      "rodolphe.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       11
@@ -117,7 +117,7 @@ const team = [
   {
     name:     "Sacha",
     lastName: "Bellaiche",
-    img:      "sacha.jpeg",
+    img:      "sacha.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       12
@@ -125,7 +125,7 @@ const team = [
   {
     name:     "Tanguy",
     lastName: "Foujols",
-    img:      "tanguy.jpeg",
+    img:      "tanguy.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       13
@@ -133,7 +133,7 @@ const team = [
   {
     name:     "Thibaut",
     lastName: "Barondeau",
-    img:      "thibaut.jpeg",
+    img:      "thibaut.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       14
@@ -141,7 +141,7 @@ const team = [
   {
     name:     "Tristan",
     lastName: "Puech",
-    img:      "tristan.jpeg",
+    img:      "tristan.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       15
@@ -149,7 +149,7 @@ const team = [
   {
     name:     "Xudong",
     lastName: "Zhang",
-    img:      "xudong.jpeg",
+    img:      "xudong.jpg",
     job:      "Consultant",
     sentence: "J'en peux pluus !",
     id:       16
@@ -157,7 +157,7 @@ const team = [
   {
     name:     "Sophie-Laetitia",
     lastName: "Roux",
-    img:      "sophie-laetitia.jpeg",
+    img:      "sophie-laetitia.jpg",
     job:      "Senior Consultant",
     sentence: "J'en peux pluus !",
     id:       17

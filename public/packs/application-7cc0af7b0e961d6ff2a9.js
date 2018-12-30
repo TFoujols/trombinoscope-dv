@@ -10660,7 +10660,8 @@ function shuffle(a) {
 
 // Function to display the new colleague
 function colleagueDisplay(colleague) {
-  photo.src = `/assets/${colleague.img}`;
+  // photo.src = `/assets/${colleague.img}`;
+  photo.src = `<%= asset_url(${colleague.img}) %>`;
   photo.setAttribute("data-lastname", colleague.lastName);
   photo.setAttribute("data-id", colleague.id);
   sentence.innerText = colleague.sentence;
@@ -13504,4 +13505,4 @@ __webpack_require__(/*! ../../js/affix.js */ 16)
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=application-45c0e9235b8ac8009a38.js.map
+//# sourceMappingURL=application-7cc0af7b0e961d6ff2a9.js.map
