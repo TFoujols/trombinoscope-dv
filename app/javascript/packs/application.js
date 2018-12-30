@@ -1,5 +1,5 @@
 import "bootstrap";
 import './data'; // comment
 
-import './trombinoscope'; // comment
+import './trombinoscope.js'; // comment
 
