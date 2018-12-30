@@ -33,16 +33,16 @@
 //   height: 100%;
 // }
 
-#game-container {
-  opacity: 0;
-  transform: scale(0.01);
-  transition: all 0.7s ease-out;
-}
+// #game-container {
+//   opacity: 0;
+//   transform: scale(0.01);
+//   transition: all 0.7s ease-out;
+// }
 
-#game-container.visible {
-  opacity: 1;
-  transform: scale(1);
-}
+// #game-container.visible {
+//   opacity: 1;
+//   transform: scale(1);
+// }
 
 .header h1, .header h2 {
   opacity: 0;
