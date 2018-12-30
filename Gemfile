@@ -16,6 +16,10 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+gem 'therubyracer'
+# gem 'sass-rails', "  ~> 3.1.0"
+# gem 'coffee-rails', "~> 3.1.0"
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
