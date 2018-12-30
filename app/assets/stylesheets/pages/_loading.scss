@@ -33,38 +33,51 @@
 //   height: 100%;
 // }
 
-// #game-container {
-//   opacity: 0;
-//   transform: scale(0.01);
-//   transition: all 0.7s ease-out;
-// }
+#game-container {
+  opacity: 0;
+  transform: scale(0.01);
+  transition: all 0.7s ease-out;
+}
 
-// #game-container.visible {
-//   opacity: 1;
-//   transform: scale(1);
-// }
+#game-container.visible {
+  opacity: 1;
+  transform: scale(1);
+}
 
-// .header h1, .header h2 {
-//   opacity: 0;
-//   transform: translateX(-300px);
-//   transition: all 0.7s ease-out;
-// }
+.header h1, .header h2 {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+}
 
-// .header h1.visible {
-//   opacity: 1;
-//   transform: translateX(0px);
-// }
+.header h1.visible {
+  opacity: 1;
+  transform: translateX(0px);
+}
 
-// .header h2.visible {
-//   opacity: 0.6;
-//   transform: translateX(0px);
-// }
-
-
+.header h2.visible {
+  opacity: 0.6;
+  transform: translateX(0px);
+}
 
 
 
 
+.loader-container {
+  visibility: visible;
+  z-index: 100;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  // margin-left: 1.25em;
+}
+
+@media screen and (max-width: 800px)
+{
+  .loader-container {
+    top: 200px;
+  }
+}
 
 
 .loader,
@@ -81,7 +94,7 @@
 .loader {
   color: $green;
   font-size: 12px;
-  margin: 80px auto;
+  margin-left: -1.25em;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
