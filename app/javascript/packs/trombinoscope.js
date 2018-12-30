@@ -13,7 +13,8 @@ setTimeout(function(){
       },400);
 
 setTimeout(function(){
-  loadingDiv.classList.add('invisible');
+  loadingDiv.parentNode.removeChild(loadingDiv);
+
   gameDiv.classList.add('visible');
       },400);
 })
